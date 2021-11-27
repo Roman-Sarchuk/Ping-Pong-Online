@@ -4,7 +4,7 @@
 import socket
 import time
 
-host = socket.gethostbyname(socket.gethostname())
+host = '192.168.0.103'		# ! IP пристрою де є сервер !
 port = 9090
 
 clients = []
