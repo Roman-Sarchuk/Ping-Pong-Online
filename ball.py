@@ -14,9 +14,9 @@ root.resizable(width=False, height=False)
 # ------------------------
 
 # ---Налаштування мережі---
-host = socket.gethostbyname(socket.gethostname())
+host = '192.168.0.103'		# !!! Вписати IP на якому розташований код !!!
 port = 0
-server = ('192.168.0.103', 9090)
+server = ('192.168.0.103', 9090)    # ! Вписати IP пристрою де є сервер !
 s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 s.bind((host, port))
 s.setblocking(False)
